@@ -1,7 +1,6 @@
 ---
 name: Task
 about: Internal tasks, technical debt, or maintenance work
-title: "PG-XXX-zzz "
 labels: task
 assignees: ''
 ---
