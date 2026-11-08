@@ -1,2 +1,2 @@
 # projgen
-Automated boilerplate generator for standardizing repository structures, documentation, and contribution workflows.
+projgen is a Python-based command-line interface designed to automate the initial setup of software repositories. It generates standardized documentation and strict issue/pull request templates to enforce quality assurance and organization from day one. The tool itself is built with reliability in mind, featuring automated testing via pytest and CI/CD pipelines integrated with GitHub Actions.
