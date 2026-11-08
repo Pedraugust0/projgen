@@ -1,0 +1,19 @@
+name: Enforce Development Branch
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  verify-source-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if comes from development
+        run: |
+          if [ "${{ github.head_ref }}" != "development" ]; then
+            echo "ERROR: pulls can only be made from development to main."
+            exit 1
+          else
+            echo "OK: PR coming from development."
+          fi
